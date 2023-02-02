@@ -10,7 +10,7 @@ function Cta() {
         <div>
           <a
             href="#"
-            className=" p-3 px-6 pt-2 text-brightRed bg-white shadow-2xl rounded-full baseline hover:bg-gray-900"
+            className="p-3 px-6 pt-2 text-brightRed bg-white shadow-2xl rounded-full baseline hover:bg-gray-400"
           >
             Get Started
           </a>
