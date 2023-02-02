@@ -10,19 +10,19 @@ function Footer() {
           </div>
           <div className="flex justify-center space-x-4">
             <a href="#">
-              <img src="images/icon-facebook.svg" className="h-8" alt="" />
+              <img src="images/icons8-facebook.svg" className="h-8" alt="" />
             </a>
             <a href="#">
-              <img src="images/icon-youtube.svg" className="h-8" alt="" />
+              <img src="images/icons8-youtube-logo.svg" className="h-8" alt="" />
             </a>
             <a href="#">
-              <img src="images/icon-twitter.svg" className="h-8" alt="" />
+              <img src="images/icons8-twitter.svg" className="h-8" alt="" />
             </a>
             <a href="#">
-              <img src="images/icon-pintrest.svg" className="h-8" alt="" />
+              <img src="images/icons8-pinterest.svg" className="h-8" alt="" />
             </a>
             <a href="#">
-              <img src="images/icon-instagram.svg" className="h-8" alt="" />
+              <img src="images/icons8-instagram.svg" className="h-8" alt="" />
             </a>
           </div>
         </div>
