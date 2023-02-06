@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 function Header() {
   return (
@@ -32,7 +32,7 @@ function Header() {
         </a>
         <button
           id="menu-btn"
-          className=" block hamburger md:hidden focus:outline-none"
+          className="open={open} setOpen={setOpen} block hamburger md:hidden focus:outline-none"
         >
           <span className="hamburger-top"></span>
           <span className="hamburger-middle"></span>
