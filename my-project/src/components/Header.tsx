@@ -30,9 +30,10 @@ function Header() {
         >
           Get Started
         </a>
+
         <button
           id="menu-btn"
-          className="open={open} setOpen={setOpen} block hamburger md:hidden focus:outline-none"
+          className="block hamburger md:hidden focus:outline-none"
         >
           <span className="hamburger-top"></span>
           <span className="hamburger-middle"></span>
