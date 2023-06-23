@@ -2,14 +2,19 @@ import React, {useRef, useState} from "react";
 
 function Header() {
    const btnRef = useRef<HTMLButtonElement>(null);
-  const [isOpen, setIsOpen] = useState<boolean>(false);
+   const navRef = useRef<HTMLDivElement>(null);
+   const [isOpen, setIsOpen] = useState(false);
 
-  const toggleMenu = (): void => {
-    setIsOpen(!isOpen);
-    if (btnRef.current) {
-      btnRef.current.classList.toggle("open");
-    }
-  }
+   const toggleMenu = () => {
+     setIsOpen(!isOpen);
+     if (btnRef.current) {
+       btnRef.current.classList.toggle("open");
+     }
+     if (navRef.current) {
+       navRef.current.classList.toggle("flex");
+       navRef.current.classList.toggle("hidden");
+     }
+   };
   return (
     <nav className="relative container p-6 mx-auto">
       <div className="flex items-center justify-between">
@@ -41,7 +46,9 @@ function Header() {
         </a>
 
         <button
-          id="menu-btn" onClick={toggleMenu} ref={btnRef}
+          id="menu-btn"
+          onClick={toggleMenu}
+          ref={btnRef}
           className="block hamburger md:hidden focus:outline-none"
         >
           <span className="hamburger-top"></span>
@@ -49,10 +56,13 @@ function Header() {
           <span className="hamburger-bottom"></span>
         </button>
       </div>
-      <div className={isOpen ? 'open' : ''}>
+      <div className="relative">
         <div
           id="menu"
-          className="absolute flex-col items-center self-end hidden py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md"
+          className={`${
+            isOpen ? "open" : "hidden"
+          } absolute top-full mt-11 text-center flex flex-col bg-gray-50  left-6 right-6 drop-shadow-md z-10`}
+          ref={navRef}
         >
           <a href="#">Pricing</a>
           <a href="#">Product</a>
