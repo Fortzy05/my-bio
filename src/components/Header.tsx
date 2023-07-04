@@ -1,3 +1,4 @@
+
 import React, {useRef, useState} from "react";
 
 function Header() {
@@ -61,7 +62,7 @@ function Header() {
           id="menu"
           className={`${
             isOpen ? "open" : "hidden"
-          } absolute top-full mt-11 text-center flex flex-col bg-gray-50  left-6 right-6 drop-shadow-md z-10`}
+          } absolute flex flex-col items-center self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md`}
           ref={navRef}
         >
           <a href="#">Pricing</a>

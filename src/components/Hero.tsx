@@ -1,6 +1,6 @@
 import React from "react";
 
-function Hero() {
+function Hero(): JSX.Element {
   return (
     <section id="hero">
       <div className="container flex flex-col-reverse md:flex-row items-center px-6 mx-auto mt-10 space-y-0 md:space-y-0">
@@ -23,7 +23,7 @@ function Hero() {
           </div>
         </div>
         <div className="md:w-1/2">
-            <img src="images/illustration-intro.svg" alt="" />
+          <img src="/images/illustration-intro.svg" alt="" />
         </div>
       </div>
     </section>
