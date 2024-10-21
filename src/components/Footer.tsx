@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 function Footer() {
   return (
@@ -9,27 +10,59 @@ function Footer() {
             Copyright &copy; 2023, All Rights Reserved
           </div>
           <div>
-            <img src="images/logo-white.svg" className="h-8" alt="" />
+            <Image
+              height={150}
+              width={150}
+              src="images/logo-white.svg"
+              className="h-8"
+              alt=""
+            />
           </div>
           <div className="flex justify-center space-x-4">
             <a href="#">
-              <img src="images/icons8-facebook.svg" className="h-8" alt="" />
-            </a>
-            <a href="#">
-              <img
-                src="images/icons8-youtube-logo.svg"
-                className="h-8"
+              <Image
+                height={40}
+                width={40}
+                src="images/icons8-facebook.svg"
+                className="h-12"
                 alt=""
               />
             </a>
             <a href="#">
-              <img src="images/icons8-twitter.svg" className="h-8" alt="" />
+              <Image
+                height={40}
+                width={40}
+                src="images/icons8-youtube-logo.svg"
+                className="h-12"
+                alt=""
+              />
             </a>
             <a href="#">
-              <img src="images/icons8-pinterest.svg" className="h-8" alt="" />
+              <Image
+                height={40}
+                width={40}
+                src="images/icons8-twitter.svg"
+                className="h-12"
+                alt=""
+              />
             </a>
             <a href="#">
-              <img src="images/icons8-instagram.svg" className="h-8" alt="" />
+              <Image
+                height={40}
+                width={40}
+                src="images/icons8-pinterest.svg"
+                className="h-12"
+                alt=""
+              />
+            </a>
+            <a href="#">
+              <Image
+                height={40}
+                width={40}
+                src="images/icons8-instagram.svg"
+                className="h-12"
+                alt=""
+              />
             </a>
           </div>
         </div>

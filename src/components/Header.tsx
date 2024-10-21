@@ -1,26 +1,26 @@
-
-import React, {useRef, useState} from "react";
+import Image from "next/image";
+import React, { useRef, useState } from "react";
 
 function Header() {
-   const btnRef = useRef<HTMLButtonElement>(null);
-   const navRef = useRef<HTMLDivElement>(null);
-   const [isOpen, setIsOpen] = useState(false);
+  const btnRef = useRef<HTMLButtonElement>(null);
+  const navRef = useRef<HTMLDivElement>(null);
+  const [isOpen, setIsOpen] = useState(false);
 
-   const toggleMenu = () => {
-     setIsOpen(!isOpen);
-     if (btnRef.current) {
-       btnRef.current.classList.toggle("open");
-     }
-     if (navRef.current) {
-       navRef.current.classList.toggle("flex");
-       navRef.current.classList.toggle("hidden");
-     }
-   };
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+    if (btnRef.current) {
+      btnRef.current.classList.toggle("open");
+    }
+    if (navRef.current) {
+      navRef.current.classList.toggle("flex");
+      navRef.current.classList.toggle("hidden");
+    }
+  };
   return (
     <nav className="relative container p-6 mx-auto">
       <div className="flex items-center justify-between">
         <div className="pt-2">
-          <img src="images/logo.svg" alt="" />
+          <Image height={150} width={150} src="images/logo.svg" alt="" />
         </div>
         <div className="hidden md:flex space-x-6 font-bold">
           <a href="#" className="hover:text-darkGrayishBlue">

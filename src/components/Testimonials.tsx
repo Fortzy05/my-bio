@@ -25,7 +25,13 @@ function Testimonials(): JSX.Element {
             </p>
           </div>
           <div className="hidden md:flex flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightGray md:w-1/3">
-            <img src="/images/avatar-ali.png" className="w-16 -mt-14" alt="" />
+            <Image
+              width={40}
+              height={40}
+              src="/images/avatar-ali.png"
+              className="w-16 -mt-14"
+              alt="ali"
+            />
             <h5 className="text-lg font-bold">Ali Bravo</h5>
             <p className="text-sm text-darkGrayishBlue">
               "We have been able to cancel so many other subscriptions since
@@ -35,10 +41,12 @@ function Testimonials(): JSX.Element {
           </div>
 
           <div className="hidden md:flex flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightGray md:w-1/3">
-            <img
+            <Image
+              width={40}
+              height={40}
               src="/images/avatar-richard.png"
               className="w-16 -mt-14"
-              alt=""
+              alt="avatar"
             />
             <h5 className="text-lg font-bold">Richard Watts</h5>
             <p className="text-sm text-darkGrayishBlue">

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 function Hero(): JSX.Element {
@@ -23,7 +24,12 @@ function Hero(): JSX.Element {
           </div>
         </div>
         <div className="md:w-1/2">
-          <img src="/images/illustration-intro.svg" alt="" />
+          <Image
+            width={500}
+            height={500}
+            src="/images/illustration-intro.svg"
+            alt=""
+          />
         </div>
       </div>
     </section>
